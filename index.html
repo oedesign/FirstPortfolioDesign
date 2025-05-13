@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Specifies the character encoding for the HTML document as UTF-8, ensuring proper display of text and symbols. --> 
     <meta charset="UTF-8">
+    <!-- Ensures the website is responsive and scales correctly on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Oluwaseyi Elujoba | OE Design</title>
-    <meta name="description" content="Discover the portfolio of Oluwaseyi Elujoba, a dedicated front-end developer skilled in HTML, CSS, JavaScript, and more. Explore my projects, skills, and professional journey.">
-    <meta name="keywords" content="Oluwaseyi Elujoba, front-end developer, HTML, CSS, JavaScript, Bootstrap, React, web design, portfolio, professional skills">
-    <meta name="author" content="Oluwaseyi Elujoba">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <!-- Sets the title of the web page shown in the browser tab -->
+    <title>Document</title>
+    <!-- Specifies a brief description of the webpage for search engines and social media previews -->
+    <meta name="description" content="">
+    <!-- Specifies the author of the web page for metadata and SEO purposes -->
+    <meta name="author" content="Oluwaseyi Elujoba | OE Design">
+    <!-- Establishes a preconnection to Google Fonts to improve font loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes an early connection to the Google Fonts server to improve font loading performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--
+        This line imports the "Merriweather" and "Roboto" fonts from Google Fonts,
+        enabling their use in the website's styles.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Links an external CSS file for responsive design using media queries -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
 <body>
+    <!-- Header section containing the main title and navigation menu -->
     <header>
-        <h1>OE Design</h1>
+        <h1>Richard Dan-Ogodogu</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="" download="">Download CV</a></li>
+                <li><a href="folders/About Me @ Richard Dan Ogodogu.pdf" download="">Download CV</a></li>
+                <li><a href="folders/Richard Dan Ogodogu Graphic Designer Cover Letter.pdf">Cover Letter</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="about-me">
-             <div class="profile">
-                <img src="images/main-pic.jpg" alt="My Profile" width="300">
-             </div>
-             <div class="description">
-                  <h2>I am a Front-end developer</h2>
-                  <p class="max-width" >I am skilled in HTML, CSS, Bootsrap, Javascript and Jquery still learning react.js and other frameworks and libraries.</p>
-                  <button onclick="document.location='https://linkedin.com/in/oluwaseyi-elujoba-741848313'">HIRE ME</button>
-                  <div class="social-handles">
-                    <img src="images/instagram.webp" alt="" width="30">
-                    <img src="images/211928_social_youtube_icon.png" alt="" width="30">
-                    <img src="images/8666770_linkedin_social_icon.png" alt="" width="30">
-                    <img src="images/8666686_github_icon.png" alt="" width="30">
-                    <img src="images/8666797_facebook_social_icon.png" alt="" width="30">
-                 </div>
-             </div>
-        </div>
+        <section id="main-section">
+            <div class="profile-pic">
+                <img src="images/Screenshot 2025-05-13 113053.png" alt="My Profile Picture">
+            </div>
+            <div class="description-social_links">
+                <h2>Graphic Designer</h2>
+                <p class="max-width">Creative and detail-oriented graphic designer with 10 years+ of experience in
+                developing visually compelling designs for print and digital media. Adept at
+                collaborating with cross-functional teams and managing multiple projects to
+                deliver high-quality results on time and within budget.</p>
+                <div class="hire">
+                    <button>Hire Me</button>
+                </div>
+                <div class="social-links">
+                    <a href=""><img src="images/8666770_linkedin_social_icon.png" alt="" width="40"></a>
+                    <a href=""><img src="images/8666797_facebook_social_icon.png" alt="" width="40"></a>
+                    <a href=""><img src="images/211928_social_youtube_icon.png" alt="" width="40"></a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; Oluwaseyi Elujoba 2025. All rights reserved.</p>
+        <p>&copy;2025 Richard Dan-Ogodogu. All rights reserved</p>
+        <p class="oe-design">Designed by, OE Design</p>
     </footer>
 </body>
 </html>
